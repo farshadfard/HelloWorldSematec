@@ -13,4 +13,8 @@
     <string name="input_data">ورود اطلاعات</string>
     <string name="show_list">نمایش لیست</string>
     <string name="welcome_to_my_project">Welcome To My Project</string>
+    <string name="input_city_name">نام شهر مورد نظر را به انگلیسی وارد کنید</string>
+    <string name="search">جستجو</string>
+    <string name="not_provided">-</string>
+    <string name="prayer_times">اوقات شرعی</string>
 </resources>

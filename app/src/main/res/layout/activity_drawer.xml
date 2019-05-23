@@ -46,6 +46,12 @@
             android:layout_height="wrap_content"
             android:text="@string/show_list"/>
 
+        <Button
+            android:id="@+id/btnPrayerTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prayer_times"/>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.drawerlayout.widget.DrawerLayout>

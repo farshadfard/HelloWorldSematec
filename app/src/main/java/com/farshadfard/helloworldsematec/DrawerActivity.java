@@ -15,6 +15,7 @@ public class DrawerActivity extends AppCompatActivity {
 
     Button btnInputData;
     Button btnShowList;
+    Button btnPrayerTimes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,17 +39,22 @@ public class DrawerActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnPrayerTimes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DrawerActivity.this, PrayerTimesActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
-    private void AssignViews()
-    {
-        try
-        {
+    private void AssignViews() {
+        try {
             btnInputData = findViewById(R.id.btnInputData);
             btnShowList = findViewById(R.id.btnShowList);
-        }
-        catch(Exception ex)
-        {
+            btnPrayerTimes = findViewById(R.id.btnPrayerTimes);
+        } catch (Exception ex) {
             Toast.makeText(this, ex.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
         }
     }
